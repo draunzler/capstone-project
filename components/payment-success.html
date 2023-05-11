@@ -21,5 +21,14 @@
             <img src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/o2d8k32u3d-3%3A105?alt=media&token=71227ef7-5ace-40fe-b4f1-c2e132dd0643"/>
         </div>
     </header>
+    <img id="qrcode"/>
+    <script>
+        // Generate the QR code with the Google Charts API
+        const url = 'https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=https%3A%2F%2Fexample.com%2Freceipt';
+        
+        // Create a new QRCode instance and set the image source to the generated URL
+        const qrcode = new QRCode(document.getElementById('qrcode'));
+        qrcode.makeCode('reciept.html');
+      </script>
 </body>
 </html>
